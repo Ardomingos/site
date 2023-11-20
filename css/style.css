@@ -220,7 +220,11 @@ section.regras h2 {
 }
 
 section.regras.primary p {
-  margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+  margin-bottom: 10px; 
+}
+
+section.regras.secundary p {
+  margin-bottom: 10px; 
 }
 
 /* Seção 1 */
@@ -237,16 +241,3 @@ section.regras.primary {
   padding: 20px;
 }
 
-/* Seção 3 */
-section.regras.secundary {
-  background-color: var(--secondary-bg-color);
-  color: white;
-  padding: 20px;
-}
-
-/* Seção 4 */
-section.regras.primary {
-  background-color: var(--main-bg-color);
-  color: white;
-  padding: 20px;
-}

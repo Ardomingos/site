@@ -1,34 +1,32 @@
 /* configurações globais */
-
 :root {
   --main-bg-color: #2A2C2F;
   --secondary-bg-color: #323437;
   --text-color: white;
 }
 
-  
-*{
+* {
   color: var(--text-color);
   padding: 0;
   margin: 0;
 }
 
-.primary{
+.primary {
   background-color: var(--main-bg-color);
 }
 
-.secundary{
+.secundary {
   background-color: var(--secondary-bg-color);
 }
 
-section{
-  height: 100vh;  
+section {
+  height: 100vh;
 }
 
 section.jornada h2,
 section.como-jogar h2,
 section.tabuleiro h2,
-section.cartas h2{
+section.cartas h2 {
   height: 20vh;
   width: 80vw;
   align-items: end;
@@ -47,75 +45,48 @@ header {
   background-color: var(--main-bg-color);
 }
 
-header div{
+header div {
   display: flex;
   width: 260px;
   justify-content: space-around;
 }
 
-/* pagina inicial */
-section.inicio{
+/* Seções compartilhadas (jornada e inicio) */
+section.jornada,
+section.inicio {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section.inicio img{
-  size: 20rem;
-}
-
-section.inicio div{
+section.jornada div,
+section.inicio div {
   max-width: 80vw;
   display: flex;
   font-size: 1.5rem;
   justify-content: space-between;
 }
 
-section.inicio h2{
-  font-size: 60px;
-}
-
-section.inicio div div{
+section.jornada div div,
+section.inicio div div {
   flex-direction: column;
   align-self: center;
   width: 60%;
 }
 
-section.inicio div div h2{
-  margin-bottom: 15px;
-}
-
-/* Adicionando estilos específicos para a nova seção */
-section.jornada {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section.jornada div{
-  max-width: 80vw;
-  display: flex;
-  font-size: 1.5rem;
-  justify-content: space-between;
-}
-
-section.jornada div div{
-  flex-direction: column;
-  align-self: center;
-  width: 60%;
-}
-
-section.jornada div div h2{
+section.jornada div div h2,
+section.inicio div div h2 {
   margin-bottom: 15px;
 }
 
 /* cartas */
-section.cartas{
+section.cartas {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.secao-cartas{
+
+.secao-cartas {
   display: flex;
   width: 80vw;
   height: 45vh;
@@ -124,78 +95,65 @@ section.cartas{
   align-self: center;
 }
 
-section.cartas .atras{
+section.cartas .atras,
+section.cartas .frente {
   height: 80vh;
   width: 35vw;
   flex-direction: column;
   justify-content: space-around;
 }
 
-section.cartas .frente{
-  height: 80vh;
-  width: 35vw;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.atras img{
-  height: 35vh;
-  width: 13vw;
-}
-.frente img{
+.atras img,
+.frente img {
   height: 35vh;
   width: 13vw;
 }
 
-.atras div{
-  width: 100%;
-  display: flex;
-  justify-content: space-between; 
-}
-
-.frente div{
+.atras div,
+.frente div {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-section.cartas .atras_recompensa img{
+section.cartas .atras_recompensa img {
   max-height: 70vh;
 }
 
 /* tabuleiro */
-section.tabuleiro{
+section.tabuleiro {
   display: flex;
   justify-content: center;
+  height: 140vh; 
 }
 
-section.tabuleiro div{
+section.tabuleiro div {
   width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-    
 }
 
-section.tabuleiro img{
+section.tabuleiro img {
   max-width: 48vw;
+  max-height: 100%; 
 }
 
-/*como jogar*/
-section.como-jogar{
+/* como jogar */
+section.como-jogar {
   display: flex;
-  height: 100vh;
+  height: 200vh;
   justify-content: center;
 }
 
-section.como-jogar div{
+section.como-jogar div {
   display: flex;
   width: 80vw;
-  flex-direction: column;  
-}
-section.como-jogar div div{
-  width: 90%;
-  display: flex;
-  justify-content: space-between; 
+  flex-direction: column;
 }
 
+section.como-jogar div div {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}

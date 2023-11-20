@@ -10,11 +10,14 @@
     <header>
         <h1>the face of bahamut</h1>
         <div>
-            <p>INÍCIO</p>
+            <a href="#" onclick="scrollToTop()">INÍCIO</a>
             <a href="regras.html">REGRAS</a>
             <a href="sobre.html">SOBRE</a>
+            <a href="elementos.html">ELEMENTOS</a>
+            <a href="como-jogar.html">JOGO</a>
         </div>
     </header>
+    
     <section class="inicio secundary">
         <div>
             <div>
@@ -157,6 +160,13 @@
             </div>  
         </div>                    
     </section>
+
+
+    <script>
+        function scrollToTop() {
+            document.getElementById('inicio').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 
 </body>
 </html>

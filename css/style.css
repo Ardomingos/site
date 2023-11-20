@@ -20,14 +20,16 @@
 }
 
 section {
-  height: 100vh;
+  padding: 50px 0;
+  box-sizing: border-box;
+  overflow: hidden; 
 }
 
 section.jornada h2,
 section.como-jogar h2,
 section.tabuleiro h2,
 section.cartas h2 {
-  height: 20vh;
+  height: auto;
   width: 80vw;
   align-items: end;
   display: flex;
@@ -156,4 +158,95 @@ section.como-jogar div div {
   width: 90%;
   display: flex;
   justify-content: space-between;
+}
+
+/*disposicao dos botoes*/
+header div {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaço entre os botões */
+}
+
+header div a {
+  font-size: 16px; /* Tamanho da fonte menor */
+  text-decoration: none; /* Remover sublinhado dos links */
+  color: white; /* Cor do texto dos botões */
+}
+
+/* Seção para Botões no Header */
+header div {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaço entre os botões */
+}
+
+header div a {
+  font-size: 16px; /* Tamanho da fonte menor */
+  text-decoration: none; /* Remover sublinhado dos links */
+  color: white; /* Cor do texto dos botões */
+}
+
+/* Seção para Seções Adicionais na Página de Regras */
+section.regras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.regras div {
+  max-width: 80vw;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+
+section.regras div div {
+  flex-direction: column;
+  align-self: center;
+  width: 60%;
+}
+
+section.regras div div h2 {
+  margin-bottom: 15px;
+}
+
+/* Títulos das Seções Adicionais */
+section.regras h2 {
+  height: 20vh;
+  width: 80vw;
+  align-items: end;
+  display: flex;
+  font-size: 60px;
+}
+
+section.regras.primary p {
+  margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+}
+
+/* Seção 1 */
+section.regras.secundary {
+  background-color: var(--secondary-bg-color);
+  color: white;
+  padding: 20px;
+}
+
+/* Seção 2 */
+section.regras.primary {
+  background-color: var(--main-bg-color);
+  color: white;
+  padding: 20px;
+}
+
+/* Seção 3 */
+section.regras.secundary {
+  background-color: var(--secondary-bg-color);
+  color: white;
+  padding: 20px;
+}
+
+/* Seção 4 */
+section.regras.primary {
+  background-color: var(--main-bg-color);
+  color: white;
+  padding: 20px;
 }

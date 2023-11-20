@@ -5,7 +5,7 @@
   --secondary-bg-color: #323437;
   --text-color: white;
 }
- 
+
   
 *{
   color: var(--text-color);
@@ -25,8 +25,9 @@ section{
   height: 100vh;  
 }
 
+section.jornada h2,
 section.como-jogar h2,
-section.personagens h2,
+section.tabuleiro h2,
 section.cartas h2{
   height: 20vh;
   width: 80vw;
@@ -36,7 +37,6 @@ section.cartas h2{
 }
 
 /* Cabecalho */
-
 header {
   position: fixed;
   width: 100%;
@@ -53,9 +53,7 @@ header div{
   justify-content: space-around;
 }
 
-
 /* pagina inicial */
-
 section.inicio{
   display: flex;
   justify-content: center;
@@ -87,55 +85,72 @@ section.inicio div div h2{
   margin-bottom: 15px;
 }
 
+/* Adicionando estilos específicos para a nova seção */
+section.jornada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.jornada div{
+  max-width: 80vw;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+
+section.jornada div div{
+  flex-direction: column;
+  align-self: center;
+  width: 60%;
+}
+
+section.jornada div div h2{
+  margin-bottom: 15px;
+}
+
 /* cartas */
-
-
 section.cartas{
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }
-
-
-
 .secao-cartas{
   display: flex;
   width: 80vw;
-  height: 100vh;
+  height: 45vh;
   justify-content: space-between;
   font-size: 40px;
   align-self: center;
 }
 
+section.cartas .atras{
+  height: 80vh;
+  width: 35vw;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
-section.cartas .atras,
 section.cartas .frente{
   height: 80vh;
-  width: 80vw;
-}
-
-section.cartas .atras{
-  height: 85%;
-  width: 20vw;
-  display: flex;
+  width: 35vw;
   flex-direction: column;
   justify-content: space-around;
 }
 
-section.cartas .frente{
-  height: 85%;
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.atras img{
+  height: 35vh;
+  width: 13vw;
 }
-
-
-
-.atras img,
 .frente img{
-  max-width: 14vw;
+  height: 35vh;
+  width: 13vw;
+}
+
+.atras div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
 }
 
 .frente div{
@@ -144,28 +159,17 @@ section.cartas .frente{
   justify-content: space-between;
 }
 
+section.cartas .atras_recompensa img{
+  max-height: 70vh;
+}
 
-/* Personagens */
-
-section.personagens{
+/* tabuleiro */
+section.tabuleiro{
   display: flex;
   justify-content: center;
 }
 
-section.personagens div{
-  width: 80vw;
-    
-}
-
-
-/*como jogar*/
-
-section.como-jogar{
-  display: flex;
-  justify-content: center;
-}
-
-section.como-jogar div{
+section.tabuleiro div{
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -173,15 +177,25 @@ section.como-jogar div{
     
 }
 
-section.como-jogar .texto{
-  background-color: var(--secondary-bg-color);
-  width: 80%;
-  height: 60%;
-  align-self: center;
-  display: flex;
+section.tabuleiro img{
+  max-width: 48vw;
 }
 
-section.como-jogar .texto p{
-  padding: 0 10px;
-  font-size: 1rem;
+/*como jogar*/
+section.como-jogar{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
 }
+
+section.como-jogar div{
+  display: flex;
+  width: 80vw;
+  flex-direction: column;  
+}
+section.como-jogar div div{
+  width: 90%;
+  display: flex;
+  justify-content: space-between; 
+}
+

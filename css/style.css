@@ -186,7 +186,7 @@ header div a {
   color: white; /* Cor do texto dos botões */
 }
 
-/* Seção para Seções Adicionais na Página de Regras */
+/* Seção para Seções Adicionais na Página de Regras(Reutilizadas nas outras pages) */
 section.regras {
   display: flex;
   justify-content: center;
@@ -219,25 +219,37 @@ section.regras h2 {
   font-size: 60px;
 }
 
+/* Espaçamento entre linhas Seção primaria */
 section.regras.primary p {
   margin-bottom: 10px; 
 }
 
+/* Espaçamento entre linhas Seção secundaria */
 section.regras.secundary p {
   margin-bottom: 10px; 
 }
 
-/* Seção 1 */
+/* Seção primaria */
 section.regras.secundary {
   background-color: var(--secondary-bg-color);
   color: white;
   padding: 20px;
 }
 
-/* Seção 2 */
+/* Seção secundaria */
 section.regras.primary {
   background-color: var(--main-bg-color);
   color: white;
   padding: 20px;
 }
+section.regras.primary img {
+  max-width: 120px;
+  height: auto;
+  display: inline-block;
+  margin: 10px; 
+}
+section.regras.secundary img {
+  max-width: auto;
+  height: auto;
 
+}
